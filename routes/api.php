@@ -29,7 +29,7 @@ Route::apiResource('/posts', \App\Http\Controllers\PostsController::class);
 
 route::post('/barbers', [BarberController::class, 'store']);
 route::get('/barbers', [BarberController::class, 'index']);
-route::get('/barbersAll/{id}', [BarberController::class, 'show']);
+route::get('/barbersAll/', [BarberController::class, 'show']);
 route::post('/available', [AvailableController::class, 'store']);
 
 
